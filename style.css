@@ -3,22 +3,25 @@
     box-sizing: border-box;
     text-align: center;
     font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 body {
     background-color: rgb(244, 248, 255);
 }
 header {
-    border-bottom: 1px solid rgb(129, 163, 255);
-    background-color: rgb(92, 149, 255);
+    background-color: rgb(23, 104, 255);
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .5), 0 2px 6px 2px rgba(60, 64, 67, .3);
     position: fixed;
     width: 100%;
+    height: auto;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 h1 {
     font-size: 60px;
@@ -28,7 +31,19 @@ h1 {
 .linkBox {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    height: 75px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+}
+.topLinks {
+    height: 100%;
+    width: 130px;
+    color: white;
+    font-size: 20px;
+}
+.topLinks:hover {
+    background-color: rgba(0, 0, 0, .2);
 }
 .myLinks {
     background-color: rgb(255, 55, 55);
@@ -37,7 +52,8 @@ h1 {
     width: 120px;
     height: 30px;
     margin: 0 10px;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .4), 0 2px 6px 2px rgba(60, 64, 67, .2);
+    line-height: 30px;
 }
 .projectBox {
     display: flex;
